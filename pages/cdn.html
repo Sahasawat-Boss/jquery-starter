@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Starter| CDN Test</title>
+
+    <!--!! jQuery core (required) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- jQuery UI JS -->
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/smoothness/jquery-ui.css" />
+</head>
+
+<body>
+
+    <div id="datepicker"></div>
+
+    <h1>Introduction of JQuery</h1>
+    <img id="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmLME0hpAJOqBGhaVjcgkk8hIKS3S4GAqrLg&s"
+        alt="JQ Image">
+    <button onclick="func1()">FADE</button>
+
+    <script>
+        $(function () {
+            $("#datepicker").datepicker(); // Using jQuery UI Datepicker widget
+        });
+
+        function func1() {
+            $("#img1").fadeToggle(1000);
+            //$ Selector = Get element by ID
+            //(2000) Set Time to 2000 milliseconds
+        }
+    </script>
+
+</body>
+
+</html>

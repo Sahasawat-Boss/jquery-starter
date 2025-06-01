@@ -13,3 +13,4 @@ This website will have a
 
 - Slim Version
 - CDN Version
+    > https://cdnjs.com/libraries/jquery
