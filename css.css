@@ -1,4 +1,49 @@
-html,body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
     color: rgb(255, 255, 254);
     background-color: rgb(26, 26, 26);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+
+}
+
+button {
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: rgb(51, 145, 59);
+    padding: 10px 22px;
+    border: none;
+    border-radius: 9px;
+}
+
+#div1 {
+    margin: auto;
+    text-align: center;
+    border: 3px dotted;
+    font-size: 30px;
+    background-color: rgb(94, 145, 19);
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+#div2 {
+    margin: auto;
+    margin-top: 12px;
+    text-align: center;
+    border: 3px dotted;
+    font-size: 30px;
+    background-color: rgba(175, 146, 18, 0.521);
+    height: 300px;
+    width: 300px;
+    position: relative;
 }
