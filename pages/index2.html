@@ -10,15 +10,18 @@
 
 <body>
     <h1>JQuery Selector</h1>
-    <button onclick="func1()">Click me</button>
+    <button onclick="func1()">Change Color</button>
+    <button onclick="func2()">Fade Toggle</button>
+    <p class="padding">This is paragraph 1 outside Div Tag</p>
+    <p class="padding">This is paragraph 2 outside Div Tag</p>
     <div id="div1">
         <p id="p1">This is paragraph 1</p>
         <p>This is paragraph 2</p>
     </div>
-    <div id="div2">
+    <!-- <div id="div2">
         <p class="p3">This is paragraph 3</p>
         <p>This is paragraph 4</p>
-    </div>
+    </div> -->
     <div id="div3">
         <ul>
             <li>Item1</li>
@@ -45,7 +48,17 @@
         // $(".p3").css("color", "red");
 
         // $("#div1,#div2,#div3").css("background-color","blue");
-    $("#div1, li").css("background-color", "purple")
+        $("#div1, li").css("background-color", "purple")
+    }
+
+    function func2() {
+        // $("#div1 > p").fadeToggle();
+        // just like css
+        // $("#div1 p").fadeToggle();
+        $("p:first").fadeToggle();
+        // $("p:second").fadeToggle(); <--This is not working only first and last
+        $("li:odd").fadeToggle();
+        $("li:even").fadeToggle();
     }
 </script>
 
