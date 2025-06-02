@@ -47,3 +47,15 @@ button {
     width: 300px;
     position: relative;
 }
+
+#div3 {
+    margin: auto;
+    margin-top: 12px;
+    text-align: center;
+    border: 3px dotted;
+    font-size: 30px;
+    background-color: rgba(175, 146, 18, 0.521);
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
