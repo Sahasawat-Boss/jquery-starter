@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Starter | Events</title>
+    <link rel="stylesheet" href="../css.css">
+</head>
+
+<body>
+    <h1>Events in JQuery</h1>
+    <div>
+        <img id="img1"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToIoRzMF9XwkEZwEkVw_pJgrmpUgoATbGwcg&s" alt="JQ"
+            width="200px">
+    </div>
+    <button id="btn" onclick="func1()">Click Bigger</button>
+    <button id="btn" onclick="func2()">Click Smaller</button>
+    <br><br>
+    <button id="btn3">Click Bigger JQ</button>
+</body>
+
+<script src="../jquery/jquery-3.7.1.js" type="text/javascript"></script>
+<script>
+    function func1() {
+        document.getElementById("img1").style.width = "400px";
+    }
+    function func2() {
+        document.getElementById("img1").style.width = "150px";
+    }
+
+    // jQuery
+    // $("#btn3").click(func3);
+    // function func3() {
+    //     $("#img1").css("width", "400px");
+    // }
+
+    //or
+    // $("#btn3").click(function () {
+    //     $("#img1").css("width", "400px");
+    // });
+
+    $("document").ready(function () {
+        // This function runs when the document is fully loaded
+        // Event in JQuery
+        console.log("Document is ready!");
+    })
+
+    $("document").ready(function () {
+        $("#btn3").click(function () {
+            $("#img1").css("width", "400px");
+        });
+    })
+</script>
+
+</html>
